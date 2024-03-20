@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIPickerViewDataSource {
+class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
     @IBOutlet weak var temperatureLabel: UILabel!
     
@@ -30,6 +30,9 @@ class ViewController: UIViewController, UIPickerViewDataSource {
         return tempValues.count
     }
 
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return "\(tempValues[row]) ºC"
+    }
 
 }
 
