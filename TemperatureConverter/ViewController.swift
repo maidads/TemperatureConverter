@@ -11,8 +11,14 @@ class ViewController: UIViewController, UIPickerViewDataSource {
     
     @IBOutlet weak var temperatureLabel: UILabel!
     
+    var tempValues = (-100...100).map{$0}
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        for index in -100...100 {           // if var tempValues = [Int]()
+//            tempValues.append(index)
+//        }
         
     }
     
@@ -21,7 +27,7 @@ class ViewController: UIViewController, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        <#code#>
+        return tempValues.count
     }
 
 
