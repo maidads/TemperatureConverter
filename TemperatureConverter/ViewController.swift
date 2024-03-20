@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
+    @IBOutlet weak var celciusPickerView: UIPickerView!
     @IBOutlet weak var temperatureLabel: UILabel!
     
     var tempValues = (-100...100).reversed().map{$0}
@@ -20,6 +21,9 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
 //        for index in -100...100 {           // if var tempValues = [Int]()
 //            tempValues.append(index)
 //        }
+        
+        let defaultRow = tempValues.count / 2
+        celciusPickerView.selectRow(defaultRow, inComponent: 0, animated: false)
         
     }
     

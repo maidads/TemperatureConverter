@@ -48,6 +48,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="celciusPickerView" destination="WKE-cE-zgN" id="JM7-NZ-DKW"/>
                         <outlet property="temperatureLabel" destination="rRZ-BF-NAf" id="R3m-23-vXG"/>
                     </connections>
                 </viewController>
