@@ -21,6 +21,10 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="162" id="KqK-FF-yA8"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="8Gd-h8-UtM"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="WgT-Gm-n2g"/>
+                                </connections>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 ºF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRZ-BF-NAf">
                                 <rect key="frame" x="112" y="163" width="168" height="32"/>
