@@ -24,6 +24,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         
         let defaultRow = tempValues.count / 2
         celciusPickerView.selectRow(defaultRow, inComponent: 0, animated: false)
+        pickerView(celciusPickerView, didSelectRow: defaultRow, inComponent: 0)
         
     }
     
