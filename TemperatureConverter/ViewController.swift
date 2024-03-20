@@ -12,6 +12,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBOutlet weak var temperatureLabel: UILabel!
     
     var tempValues = (-100...100).map{$0}
+    let converter = CelciusConverter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +36,12 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        print("\(row) : \(tempValues[row])")
+        //print("\(row) : \(tempValues[row])")
+        
+        let tempC = tempValues[row]
+        let tempF = converter.degreesFahrenheit(degreesCelcius: tempC)
+        
+        temperatureLabel.text = "\(tempF) ºF"
     }
 
 }
