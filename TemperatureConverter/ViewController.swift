@@ -11,7 +11,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     @IBOutlet weak var temperatureLabel: UILabel!
     
-    var tempValues = (-100...100).map{$0}
+    var tempValues = (-100...100).reversed().map{$0}
     let converter = CelciusConverter()
     
     override func viewDidLoad() {
