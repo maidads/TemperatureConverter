@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  TemperatureConverter
-//
-//  Created by Maida on 2024-03-20.
-//
-
 import UIKit
 
 class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
@@ -48,6 +41,4 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         
         temperatureLabel.text = "\(tempF) ºF"
     }
-
 }
-
